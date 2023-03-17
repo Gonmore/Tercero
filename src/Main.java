@@ -2,13 +2,14 @@ public class Main {
     public static void main(String[] args) {
         Persona persona1 = new Persona();
         persona1.setEdad(18);
-        persona1.setNombre("Francis");
-        persona1.setNumero(79669696);
         System.out.println(persona1.getEdad());
+        persona1.setNombre("Francis");
         System.out.println(persona1.getNombre());
+        persona1.setNumero(79669696);
         System.out.println(persona1.getNumero());
     }
-    static class Persona{
+}
+    class Persona{
         private int edad;
         private String nombre;
         private int numero;
@@ -32,4 +33,3 @@ public class Main {
         }
 
     }
-}
